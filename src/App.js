@@ -24,10 +24,10 @@ class App extends React.Component {
         if (city && country){
             console.log(data); 
             this.setState({
-                temperature: data.main.temp,
+                temperature: data.main.temp+" °C",
                 city: data.name,
                 country: data.sys.country,
-                humidity: data.main.humidity,
+                humidity: data.main.humidity+" %",
                 description: data.weather[0].description,
                 error: ""
             });
